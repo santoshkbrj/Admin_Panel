@@ -1,6 +1,7 @@
 import React from 'react';
 import './sidebar.css';
 import navList from '../data/navItem'
+import NavItem from './NavItem';
 
 function SideBar() {
     return (
@@ -89,12 +90,7 @@ function SideBar() {
                 </li>
                 <li className="nav-heading">Pages</li>
                 {navList.map(nav => (
-                    <li className="nav-item" key={nav._id}>
-                        <a href="#" className="nav-link collapsed">
-                            <i className={nav.icon}></i>
-                            <span>{nav.name}</span>
-                        </a>
-                    </li>
+                    <NavItem nav={nav} />
                 ))}
             </ul>
         </aside>

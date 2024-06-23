@@ -1,0 +1,27 @@
+/* ==========================================
+Main 
+============================================*/
+
+#main {
+    margin-top: 60px;
+    padding: 20px 30px;
+    transition: all 0.3s;
+    width: calc(100% - 300px);
+    margin-left: auto;
+}
+
+.toggle-sidebar #main {
+    width: 100%;
+}
+
+@media (max-width:1199px) {
+    #main {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .toggle-sidebar #main {
+        width: calc(100% - 300px);
+        margin-left: auto;
+    }
+}
