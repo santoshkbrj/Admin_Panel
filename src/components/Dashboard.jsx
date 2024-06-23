@@ -4,6 +4,7 @@ import './dashboard.css'
 import Reports from './Reports';
 import RecentSales from './RecentSales';
 import TopSelling from './TopSelling';
+import RecentActivity from './RecentActivity';
 
 function Dashboard() {
     const [cards, setCards] = useState([])
@@ -41,7 +42,7 @@ function Dashboard() {
                     </div>
                 </div>
                 <div className="col-lg-4">
-
+                    <RecentActivity />
                 </div>
             </div>
         </section>
